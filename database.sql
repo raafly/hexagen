@@ -1,0 +1,14 @@
+CREATE DATABASE iceepee;
+
+USE iceepee;
+
+CREATE TABLE resep (
+    id INT NOT NULL PRIMARY KEY,
+    gambar VARCHAR(100) NOT NULL,
+    judul VARCHAR(100) NOT NULL,
+    cara TEXT NOT NULL,
+    bahan TEXT NOT NULL,
+    deskripsi TEXT NOT NULL
+)ENGINE InnoDB;
+
+ALTER TABLE resep MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT;

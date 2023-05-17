@@ -1,0 +1,748 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo&family=Lobster+Two:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ::-webkit-scrollbar {
+	display: none;
+} */
+
+/* start typed js */
+
+.textBox .lead {
+  font-size: 41px;
+  font-style: normal;
+  font-weight: bold;
+  /* margin-top: -70px; */
+  /* margin-bottom: 12px; */
+  /* line-height: 1.9em; */
+  /* font-weight: 700; */
+  font-family: "Chivo", sans-serif;
+}
+
+/* end typed js */
+
+/* page home */
+body {
+  background: linear-gradient(179.93deg, #f9eeee 0.06%, #f4f4ff 99.94%);
+  height: 100vh;
+  width: 100%;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 70px;
+}
+
+.container-fluid {
+  display: none;
+}
+
+
+.container-fluid .logo {
+  width: 100px;
+  margin-right: -100px;
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.3));
+}
+
+.container-fluid .navbar-brand {
+  position: absolute;
+  left: 120px;
+  top: 10px;
+  font-size: 39px;
+  font-family: "Lobster Two", cursive;
+  font-style: italic;
+  background: linear-gradient(180deg, rgba(248, 209, 231, 1) 0%, rgba(254, 202, 174, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-fluid .search-nav {
+  position: absolute;
+  right: 120px;
+}
+
+.search-nav .search {
+  width: 290px;
+  height: 35px;
+  box-sizing: border-box;
+  background: rgba(248, 239, 239, 0.29) url(../img/search.png) no-repeat scroll 10px 10px;
+  background-size: 30px;
+  background-position-y: center;
+  background-position-x: 15px;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 70px;
+  border: 1.9px solid #FEA1A1;
+  outline: none;
+}
+
+.navbar {
+  height: 80px;
+  background-color: #f9eeee;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: #f9eeee;
+  transform: translateY(100);
+  transition-duration: 500ms;
+}
+
+/* .hide-navbar {
+  transform: translateY(-100%);
+  transition-duration: 500ms;
+} */
+/* aktifkan jika kode terhubung dengan file js */
+
+.offcanvas {
+  background: linear-gradient(180deg, rgba(248, 209, 231, 1) 0%, rgba(254, 202, 174, 1) 100%);
+  display: flex;
+}
+
+.offcanvas-body {
+  justify-content: space-around;
+}
+
+.offcanvas-body .navbar-nav {
+  align-items: center;
+  justify-content: space-between;
+  /* height: 50vh; */
+  /* gunakan value height jika ingin mengatur lebar */
+}
+
+.offcanvas-header .offcanas-title {
+  font-size: 25px;
+  font-family: "Lobster Two", cursive;
+  font-style: italic;
+  margin-left: -10px;
+  margin-top: 10px;
+}
+
+
+.offcanvas .logo {
+  width: 75px;
+}
+
+.offcanvas-body .navbar-nav {
+  padding: 10px 0;
+}
+
+li:nth-child(1) a {
+  font-size: 18px;
+}
+
+li:nth-child(2) a {
+  font-size: 18px;
+}
+
+li:nth-child(3) a {
+  font-size: 18px;
+}
+
+li a:hover {
+  transform: scale(1.3);
+  transition: all 0.8s;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -25px;
+}
+
+.content .textBox {
+  width: 50%;
+  position: relative;
+}
+
+.content .textBox h2 {
+  color: #333;
+  font-size: 50px;
+  margin-top: -70px;
+  margin-bottom: 12px;
+  line-height: 1.9em;
+  font-weight: 700;
+  font-family: "Chivo", sans-serif;
+}
+
+.content .textBox p {
+  color: #333;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  font-family: "Chivo", sans-serif;
+}
+
+.content .textBox span {
+  font-style: italic;
+}
+
+.content .search {
+  width: 350px;
+  height: 40px;
+  position: absolute;   
+  top: 100%;
+  bottom: 50%;
+  box-sizing: border-box;
+  background: rgba(248, 239, 239, 0.29) url(../img/search.png) no-repeat scroll 10px 10px;
+  background-size: 30px;
+  background-position-y: center;
+  background-position-x: 15px;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.2);
+  border-radius: 90px;
+  border: 2px solid #FEA1A1;
+  outline: none;
+}
+
+::placeholder {
+  font-weight: 700px;
+  letter-spacing: 0.8px;
+  font-size: 19px;
+  font-family: "Chivo", sans-serif;
+}
+
+input:not(:placeholder-shown) {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/* button */
+
+.button-keyword {
+  margin-left: -50px;
+  opacity: 0;
+}
+
+.content .imgBox {
+  margin-right: -90px;
+  margin-top: 50px;
+}
+
+.content .imgBox .starbucks {
+  transition: all 1s;
+}
+
+.starbucks:hover {
+  transform: translateY(-12px);
+}
+
+.content span {
+  font-size: 12px;
+}
+
+/* kotak about */
+.container-satu {
+  width: 100%;
+  margin-top: -2px;
+  background: linear-gradient(179.93deg, #f9eeee 0.06%, #f4f4ff 99.94%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.kolom-satu {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  justify-content: space-between;
+  font-size: 60px;
+}
+
+.kolom-satu p {
+  color: black;
+  text-align: center;
+  font-family: "Chivo", sans-serif;
+}
+
+.kolom-satu span {
+  color: #704c21;
+}
+
+.kolom-dua .peta {
+  transition: all 1s;
+}
+
+.peta:hover {
+  transform: scale(1.1);
+}
+
+.kolom-tiga {
+  max-width: 85%;
+  padding-bottom: 50px;
+}
+
+.kolom-tiga h3 {
+  font-size: 60px;
+  margin-top: 75px;
+  width: fit-content;
+  padding-right: 450px;
+  border-bottom: rgb(54, 54, 54) solid 2px;
+  font-family: "Chivo", sans-serif;
+}
+
+.kolom-tiga span {
+  color: #704c21;
+}
+
+.kolom-tiga hr {
+  margin-bottom: 50px;
+}
+
+.saya {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.specific {
+  margin-right: 180px;
+  font-size: 25px;
+  font-family: "Chivo", sans-serif;
+}
+
+.wulan {
+  color: #5d5f61;
+  font-family: "Chivo", sans-serif;
+}
+
+/* halaman login */
+
+.kotak-utama {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: linear-gradient(90deg, #f4f4ff, #e6cece);
+}
+
+.kotak-utama .gambar img {
+  width: 670px;
+  z-index: -99;
+  background: linear-gradient(90deg, #f4f4ff, #e6cece);
+}
+
+.konten-isi {
+  width: 350px;
+  margin-top: 30px;
+  background-color: rgba(13, 13, 13, 0.2);
+  margin-left: 100px;
+  height: 390px;
+  border-radius: 18px;
+}
+
+.konten-isi h1 {
+  margin-top: 20px;
+  margin-bottom: -10px;
+  text-align: center;
+  font-family: "Chivo", sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.google,
+.mail,
+.pass,
+.name {
+  border-radius: 25px;
+}
+
+.mail,
+.pass,
+.name {
+  width: 270px;
+  height: 37px;
+}
+
+.coloum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.coloum .google {
+  width: 200px;
+  height: 30px;
+  background-image: url(../img/google.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  /* background-position-x: 12px; */
+  /* background-position-y: center; */
+}
+
+.google,
+.pass,
+.mail,
+.name {
+  font-family: "Chivo", sans-serif;
+  border-color: #989090c2;
+}
+
+.google::placeholder {
+  text-align: center;
+}
+
+.mail::placeholder {
+  font-size: 17px;
+  font-family: "Chivo", sans-serif;
+}
+.name::placeholder {
+  font-size: 17px;
+  font-family: "Chivo", sans-serif;
+}
+.pass::placeholder {
+  font-size: 17px;
+  font-family: "Chivo", sans-serif;
+}
+
+.coloum .mail {
+  padding: 0px 15px;
+  margin-top: 45px;
+}
+
+.coloum .name {
+  padding: 0px 15px;
+}
+
+.coloum .pass {
+  padding: 0px 15px;
+}
+
+.coloum .sumbit {
+  width: 200px;
+  height: 40px;
+  margin-top: 50px;
+  letter-spacing: 0.6;
+  font-size: 17px;
+  font-family: "Chivo", sans-serif;
+  color: white;
+  font-weight: bold;
+  border-radius: 9px;
+  border-color: rgb(137, 182, 209);
+  background-image: linear-gradient(90deg, #e6cece, #d1ccf4);
+}
+
+/* button card */
+.card-body .btn {
+  background: transparent;
+  border: 2px solid rgb(243, 194, 194);
+  font-family: "Chivo", sans-serif;
+  color: black;
+  text-transform: capitalize;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 7px;
+  border-radius: 16px;
+}
+
+.card-body .btn:hover {
+  color: white;
+  transition: 1s ease-in-out;
+}
+
+.main-conteet {
+  margin-top: 20px;
+  width: 100%;
+  z-index: 2;
+}
+
+.pembungkus-tampil .judul-tampil {
+  font-size: 30px;
+  font-family: "Chivo", sans-serif;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.pembungkus-tampil .img-tampil {
+  width: 310px;
+  height: 230px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.pembungkus-tampil .cara-tampil {
+  font-family: "Chivo", sans-serif;
+}
+
+.cara-tampil {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sasar {
+  display: flex;
+}
+
+.sasaran .bahan-tampil {
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.pembungkus-tampil .cara-tampil {
+  margin-top: 40px;
+  width: 60%;
+}
+
+
+.sasar .sasaran {
+  margin-left: -13px;
+}
+
+.bahan-tampil ul li {
+  line-height: 33px;
+  padding-right: 40px;
+}
+
+.bahan-tampil ul {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.cara-tampil .khusus {
+  position: absolute;
+  bottom: 66px;
+  font-weight: bold;
+}
+
+.cara-tampil ul {
+  position: absolute;
+  width: 60%;
+  line-height: 1.7;
+}
+
+.pembungkus-tampil .card {
+  display: inline-block;
+  height: 180px;
+}
+
+.row .img-fluid {
+  display: inline-block;
+  height: 180px;
+}
+
+/* page not found */
+.not-found {
+  margin-top: 50px;
+  width: 100%; 
+  height: 71vh;
+  background: linear-gradient(179.93deg, #f9eeee 0.06%, #f4f4ff 99.94%);
+
+}
+
+.not-found h1 {
+  font-size: 40px;
+  border-top: rgb(54, 54, 54) solid 2px;
+  font-family: "Chivo", sans-serif;
+}
+
+.not-found .img-not-found {
+  width: 700px;
+  height: 500px;
+  margin: -76px 250px 0;
+  
+}
+
+
+/* breakpoint phone */
+@media screen and (max-width: 576px) {
+     
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  #navbar {
+    width: 100vw;
+  }
+
+  section {
+    width: 100vw;
+    position: relative;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+  
+  .textBox {
+    margin-bottom: 100px;
+    order: 2;
+  }
+
+  .textBox .lead {
+    font-size: 26px;
+  }
+  
+  .textBox .test {
+    top: -450px;
+    position: absolute;
+    width: 300px;
+    left: -82px;
+  }
+  
+  .textBox .test2 {
+    position: absolute;
+    top: 27px;
+    left: -70px;
+    width: 350px;
+  }
+
+  .imgBox {
+    order: 1;
+    margin-bottom: 20px;
+    margin-left: -100px;
+    align-self: center;
+  }
+  
+  .imgBox .starbucks {
+    width: 400px;
+    height: 300px;
+    margin-top: 120px;
+  }
+  
+  .textBox .search {
+    position: absolute;
+    top: -400px;
+    left: -85px;
+    z-index: 5;
+  }
+  
+  /* about */
+  .container-satu {
+    position: relative;
+  }
+  
+  .kolom-satu p {
+    font-size: 27px;
+  }
+  
+  .kolom-dua .peta {
+    width: 400px;
+    height: 180px;
+  }
+
+  .kolom-tiga h3 {
+    font-size: 30px;
+    margin-bottom: 15px;    
+    white-space: nowrap;
+  }
+
+  .saya {
+    position: relative;
+  }
+  
+  .saya .wulan{
+    font-size: 15px;
+    position: absolute;
+    width: 290px;
+    left: 155px;
+  }
+
+
+  /* hasil searching */
+
+  .main-conteet {
+    width: 100%;
+    z-index: 8;
+  }
+
+  .pembungkus-tampil {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .judul-tampil {
+    font-size: 30px;
+  }
+
+  .sasar {
+    display: inline-block;
+  }
+
+  .sasaran .bahan-tampil {
+    margin-left: 13px;
+    margin-top: 20px;
+  }
+
+  .cara-tampil2 {
+    margin-top: 35px;
+    margin-left: 10px;
+    line-height: 2;
+  }
+  
+
+  .pembungkus-tampil .khusus {
+    margin-bottom: -60px;
+  }
+
+  .kolom-tiga h3 {
+    padding-right: 200px;
+  }
+
+  /* not found */
+  .not-found .img-not-found {
+    margin: -30px 10px 0;
+    width: 62vh;
+    height: 60vh;
+  }
+
+  .not-found h1 {
+    font-size: 25px;
+  }
+
+  /* searching */
+  .search-nav {
+    display: none;
+  }
+
+  .pembungkus-tampil .card {
+    height: 400px;
+    width: 90%;
+  }
+
+  .row .img-fluid {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .bahan-tampil ul {
+    display: block;
+  }
+
+  .cara-tampil .khusus {
+    position: absolute;
+    bottom: -8%;
+    left: 12%;
+  }
+  
+  .cara-tampil ul {
+    position: absolute;
+    bottom: -80%;
+    line-height: 1.7;
+    width: 78%;
+  }
+
+}
+
+

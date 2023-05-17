@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.favorite {
+	background: linear-gradient(179.93deg, #F9EEEE 0.06%, #F4F4FF 99.94%);
+}
+
+.row h5, h2, p {
+    font-family: 'Chivo', sans-serif;
+}
+
+.col h2 {
+    font-weight: 600;
+}
+
+/* tombol */
+.card-body .btn {
+    border-radius: 10px;
+}
+
+.row .card {
+    border-radius: 15px;
+}
